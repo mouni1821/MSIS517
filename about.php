@@ -1,44 +1,8 @@
 <html>
-<script>
+<body>
 
-function setCookie(cname,cvalue,exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires=" + d.toGMTString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
+<title>ABOUT</title>
 
-function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
-}
-
-function checkCookie() {
-    var user=getCookie("username");
-    if (user != "") {
-        alert("Welcome to my site " + user);
-    } else {
-       user = prompt("Please enter your firstname, lastname:","");
-       if (user != "" && user != null) {
-           setCookie("username", user, 10);
-       }
-    }
-}
-
-</script>
-<body onload="checkCookie()">
-<title>HomePage!</title>
 <link href="css1/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -54,9 +18,9 @@ function checkCookie() {
 <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 <!-- start menu -->
- <script src="jquery-1.12.4.js"></script>
+<script src="jquery-1.12.4.js"></script>
 <script src="jquery-ui.js"></script>
-<link rel="stylesheet" href="jquery-ui.css"> 
+<link rel="stylesheet" href="jquery-ui.css">
 <!-- Piwik -->
 <script type="text/javascript">
   var _paq = _paq || [];
@@ -109,7 +73,7 @@ function checkCookie() {
 
 <style>
 	.box{
-		background-color: skyblue ;
+		background-color: white ;
 		height:200px;
 		width:400px;
 		position: absolute;
@@ -160,7 +124,7 @@ function checkCookie() {
 		<div class="details">
 			<table>
 
-		 	<h3>+1 (845) 337-9835</h3>
+		 		<h3>+1 (845) 337-9835</h3>
 			<h3>mouni.1821@gmail.com</h3>
 			<h3>99 Delafield Street</h3>
 			<h3>Poughkeepsie</h3>
@@ -169,7 +133,6 @@ function checkCookie() {
 			 <a class="pop1" href="#" >
   <h3>Download Resume</h3>
 </a>
-		
 		</table>
 	</div>
 		<div class="clearfix"></div>
@@ -182,28 +145,25 @@ function checkCookie() {
 	 <div class="content">
 		 <div class="details_header">
 			 <ul>
-				 <li><a href="index.html">HOME</a></li>
+				 <li><a href="index.php">HOME</a></li>
 				 
-				 <li><a href="about.html">ABOUT</a></li>
-			   <li><a href="portfolio.html">PORTFOLIO</a></li>
-			   <li><a href="contact.html">CONTACT</a></li>
+				 <li><a href="about.php">ABOUT</a></li>
+				 <li><a href="portfolio.php">PORTFOLIO</a></li>
+				 <li><a href="contact.php">CONTACT</a></li>
 				
-				 
-				 
 			 </ul>
 		 </div>
 		 <div class="company">
 			 <h3 class="clr1">Alapati Mounika Chowdary</h3>
 			 <div class="company_details">
-				 <h4>Dreamer, Believer, Doer.<span></span></h4>
-				 <h6>Hi! I am Alapati Mounika. Computer Science Enthusiast, constantly learning, working and trying to become a better person everyday not just for me but also for the world around me</h6>
-				 <p class="cmpny1">"Welcome!!to my my portfolio website. Here its all about What I Did? What I'm doing & What I would like to do!!".
+				 <h4>About Me<span></span></h4>
+				 <p class="cmpny1">I would like	to achieve a successful career in future, I have determined to pursue higher academic studies in computer science from a reputed University from the United States of America, as the land of opportunities provides the perfect platform to fulfill my career research aspirations.,
 
 				</p>
 			 </div>
 		</div>
 		<div class="copywrite">
-			 <p>© 2017 Alapati Mounika. All Rights Reserved</p>
+			 <p>© 2017 Alapati Mounika Chowdary. All Rights Reserved</p>
 		</div>
 	 </div>
 </div>
@@ -212,8 +172,8 @@ function checkCookie() {
 	<img class="close" src="images/close.png" width="30"/>
 	<div>
 		<p>Perform Captcha</p>
-		<div id="droppable">Release</div>
-		<div id="draggable">Press and Drag</div>
+		<div id="droppable">Drop</div>
+		<div id="draggable">Click and Drag</div>
 		<iframe id="my_iframe" style="display:none;"></iframe>
 		<script>
 $( "#draggable" ).draggable();

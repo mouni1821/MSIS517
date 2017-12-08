@@ -160,11 +160,11 @@ function validateEmail(emailField){
    <div class="content">
      <div class="details_header">
        <ul>
-         <li><a href="index.html">HOME</a></li>
+         <li><a href="index.php">HOME</a></li>
 				 
-				 <li><a href="about.html">ABOUT</a></li>
-				 <li><a href="portfolio.html">PORTFOLIO</a></li>
-				 <li><a href="contact.html">CONTACT</a></li>
+				 <li><a href="about.php">ABOUT</a></li>
+				 <li><a href="portfolio.php">PORTFOLIO</a></li>
+				 <li><a href="contact.php">CONTACT</a></li>
        </ul>
      </div>
      <div class="company">
@@ -175,7 +175,7 @@ function validateEmail(emailField){
 
     <div class="company contact-grid">
        <h3 style="color:black">Contact</h3>
-       <form method="POST" name="myForm" action="contact.html" >  
+       <form method="POST" name="myForm" action="https://formspree.io/mouni.1821@gmail.com" >  
           <input type="text" name="username" required="required" placeholder="Your Name">          
           
           <input type="text" name="senderEmail" required="required" placeholder="Your Email ID" onblur="validateEmail(this);">

@@ -182,11 +182,11 @@ function checkCookie() {
 	 <div class="content">
 		 <div class="details_header">
 			 <ul>
-				 <li><a href="index.html">HOME</a></li>
+				 <li><a href="index.php">HOME</a></li>
 				 
-				 <li><a href="about.html">ABOUT</a></li>
-			   <li><a href="portfolio.html">PORTFOLIO</a></li>
-			   <li><a href="contact.html">CONTACT</a></li>
+				 <li><a href="about.php">ABOUT</a></li>
+			   <li><a href="portfolio.php">PORTFOLIO</a></li>
+			   <li><a href="contact.php">CONTACT</a></li>
 				
 				 
 				 
